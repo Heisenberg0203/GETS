@@ -1,0 +1,3 @@
+#!/bin/bash
+FOR /L %%i IN (1,1,29) DO python ponyge.py --grammar_file supervised_learning/boolean.bnf --fitness_function supervised_learning.boolean_problem --extra_parameters multiplexer 11 --population_size 250 --generations 100 
+FOR /L %%i IN (1,1,30) DO python ponyge.py --grammar_file supervised_learning/boolean.bnf --fitness_function supervised_learning.boolean_problem --extra_parameters multiplexer 11 --population_size 1000 --generations 100
