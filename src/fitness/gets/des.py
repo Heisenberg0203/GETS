@@ -101,14 +101,14 @@ class des(base_ff):
             exec(ind.phenotype,d)
             #print(d.keys())
             obsereved=x
-            ft=d['ft']
-            level=d['forecast']
+            forecast=d['forecast']
+            level=d['level']
             trend = d['trend']
             alpha = d['alpha']
             beta=d['beta']
             k = d['step']
 
-            assert np.isrealobj(ft)
+            assert np.isrealobj(forecast)
             if(dist=='test'):
                 valido = test.copy()
                 validlevel=valido.copy()
@@ -133,4 +133,4 @@ class des(base_ff):
                 return (np.sqrt(np.mean(np.square(validforecast - valido))))
                 
             #return training fitness
-            return np.sqrt(np.mean(np.square(x[:] - ft[:])))
+            return np.sqrt(np.mean(np.square(x[:] - forecast[:])))

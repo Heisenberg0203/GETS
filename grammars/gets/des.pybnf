@@ -2,15 +2,14 @@
 
 <fc> ::= import numpy as np{::}<deff>{::}<callf>
 
-<deff> ::= def fun(observed):{:{::}<init>{::}<code>{::}return ft, forecast,trend, alpha, beta, step:}
+<deff> ::= def fun(observed):{:{::}<init>{::}<code>{::}return forecast, level,trend, alpha, beta, step:}
 
-<callf> ::= ft,forecast,trend,alpha,beta, step = fun(list)
+<callf> ::= forecast,level,trend,alpha,beta, step = fun(list)
 
-<init> ::= alpha=<alpha_var>  {::}beta=<beta_var>  {::}forecast = observed.copy()  {::}trend = observed.copy()  {::}ft = observed.copy()  {::}step=<step_var>+1
+<init> ::= alpha=<alpha_var>  {::}beta=<beta_var>  {::}level = observed.copy()  {::}trend = observed.copy()  {::}forecast = observed.copy()  {::}step=<step_var>+1
 
 
-<code> ::= for i in range(1,len(observed)-step):{:{::}forecast[i]=forecast[i-1]+trend[i-1]+alpha*(observed[i]-forecast[i-1]-trend[i-1]){::}trend[i]=trend[i-1]+beta*(forecast[i]-forecast[i-1]-trend[i-1]){::}ft[i+step]=forecast[i]+step*trend[i]:}
-<r>::= GE_RANGE:5
+<code> ::= for i in range(1,len(observed)-step):{:{::}level[i]=level[i-1]+trend[i-1]+alpha*(observed[i]-level[i-1]-trend[i-1]){::}trend[i]=trend[i-1]+beta*(level[i]-level[i-1]-trend[i-1]){::}forecast[i+step]=level[i]+step*trend[i]:}
 
 <step_var> ::=	GE_RANGE:10
 
