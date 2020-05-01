@@ -1,0 +1,18 @@
+<fc> ::= import numpy as np{::}<deff>{::}<callf>
+
+<deff> ::= def fun(observed):{:{::}<init>{::}<code>{::}return forecast, level, season, trend, alpha, beta, gamma, period, step:}
+
+<callf> ::= forecast,level,season,trend,alpha,beta,gamma,period, step = fun(list)
+
+<init> ::= alpha=<alpha_var>  {::}beta=<beta_var>  {::}gamma=<gamma_var>  {::}period=<period_var>+2  {::}step=<step_var>+1  {::}level = observed.copy()  {::}trend = observed.copy()  {::}forecast = observed.copy()  {::}season = observed.copy()
+
+<code> ::= for i in range(period,len(observed)-step):{:{::}level[i]=level[i-1]+trend[i-1]+alpha*(observed[i]-level[i-1]-trend[i-1]-season[i-period]){::}trend[i]=trend[i-1]+beta*(level[i]-level[i-1]-trend[i-1]){::}season[i]=season[i-period]+gamma*(observed[i]-level[i]-season[i-period]){::}forecast[i+step]=level[i]+step*trend[i] + season[i+step-period]:}
+
+<step_var> ::= GE_RANGE:10
+<alpha_var> ::=  0.<c>
+<beta_var> ::=  0.<c>
+<gamma_var> ::= 0.<c>
+<period_var> ::= GE_RANGE:30
+
+<c> ::= GE_RANGE:9 | <c><c>
+
