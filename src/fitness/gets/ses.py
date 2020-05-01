@@ -101,7 +101,6 @@ class ses(base_ff):
             # phenotype won't refer to C
             d={'list':x}
             exec(ind.phenotype,d)
-            #print(d.keys())
             obsereved=x
             ft=d['forecast']
             level=d['level']
@@ -110,23 +109,14 @@ class ses(base_ff):
 
             assert np.isrealobj(ft)
             if(dist=='test'):
-                valido = test.copy()
-                validlevel=valido.copy()
-                validforecast=valido.copy()
+                validobserved = test.copy()
+                temp = ft[-1];
                 print(k)
                 for i in range(len(obsereved)-k,len(obsereved)):
                     level[i] = level[i-1]+alpha*(obsereved[i]-level[i-1])
-                    temp=level[i]
-                   
-                # plt.figure(figsize = (20,8))
-                # plt.plot(validforecast)
-                # plt.plot(valido)
-                # plt.show()
-                #np.savetxt("Btrain_sma.txt",a)
-                return (np.sqrt(np.mean(np.square(temp - valido))))
+                    temp=level[i]    
+                #return test fiitness
+                return (np.sqrt(np.mean(np.square(temp - validobserved))))
                     
-
-            # let's always call the error function with the true
-            # values first, the estimate second
-            np.append(a,np.sqrt(np.mean(np.square(x[:] - ft[:]))))
+            # return training fitness
             return np.sqrt(np.mean(np.square(x[:] - ft[:])))

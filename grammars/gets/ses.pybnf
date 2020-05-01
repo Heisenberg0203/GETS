@@ -4,15 +4,14 @@
 
 <callf> ::= forecast, level ,alpha, step = fun(list)
 
-<init> ::= alpha=<alpha_var>{::}level = observed.copy(){::}forecast = observed.copy(){::}step=<step_var>{::}level[0:step]=<e>{::}
+<init> ::= alpha=<alpha_var>  {::}level = observed.copy()  {::}forecast = observed.copy()  {::}step=<step_var> +1
 
 <code> ::= for i in range(1,len(observed)-step):{:{::}level[i]=level[i-1]+alpha*(observed[i]-level[i-1]){::}forecast[i+step]=level[i]:}
 
-<step_var> ::= 1|2|3|4|5|6|7|8|9
+<step_var> ::= GE_RANGE:10
 
-<alpha_var> ::= 0.<c><d>
+<alpha_var> ::= 0.<c>
 
 <c> ::= GE_RANGE:9 | <c><c>
 
-<d> ::= 1|2|3|4|5|6|7|8|9
-<e> ::=  1|2|3|4|5|6|7|8|9|<d><c>
+
