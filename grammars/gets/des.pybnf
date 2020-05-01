@@ -6,7 +6,7 @@
 
 <callf> ::= forecast,level,trend,alpha,beta, step = fun(list)
 
-<init> ::= alpha=<alpha_var>  {::}beta=<beta_var>  {::}level = observed.copy()  {::}trend = observed.copy()  {::}forecast = observed.copy()  {::}step=<step_var>+1
+<init> ::= alpha=<alpha_var>  {::}beta=<beta_var>  {::}level = observed.copy()  {::}trend = observed.copy()  {::}forecast = observed.copy()  {::}step=<step_var>+1 
 
 
 <code> ::= for i in range(1,len(observed)-step):{:{::}level[i]=level[i-1]+trend[i-1]+alpha*(observed[i]-level[i-1]-trend[i-1]){::}trend[i]=trend[i-1]+beta*(level[i]-level[i-1]-trend[i-1]){::}forecast[i+step]=level[i]+step*trend[i]:}

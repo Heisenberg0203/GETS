@@ -106,7 +106,7 @@ class des(base_ff):
             trend = d['trend']
             alpha = d['alpha']
             beta=d['beta']
-            k = d['step']
+            step = d['step']
 
             assert np.isrealobj(forecast)
             if(dist=='test'):
@@ -115,20 +115,20 @@ class des(base_ff):
                 validtrend=valido.copy()
                 validforecast=valido.copy()
                 
-                for i in range(-k,len(valido)-k):
+                for i in range(-step,len(valido)-step):
                     if(i<0):
                         level[len(level)+i]=level[len(level)-1+i]+trend[len(level)+i-1]+alpha*(obsereved[len(level)+i]-level[len(level)+i-1]-trend[len(level)+i-1])
                         trend[len(level)+i]=trend[len(level)+i-1]+beta*(level[len(level)+i]-level[len(level)+i-1]-trend[len(level)+i-1])
-                        validforecast[i+k]=level[len(level)+i]+k*trend[len(level)+i]
+                        validforecast[i+step]=level[len(level)+i]+step*trend[len(level)+i]
                     elif(i==0):
                         validlevel[0]=level[len(level)-1]+trend[len(level)-1]+alpha*(valido[0]-level[len(level)-1]-trend[len(level)-1])
                         validtrend[0]=trend[len(level)-1]+beta*(validlevel[0]-level[len(level)-1]-trend[len(level)-1])
-                        validforecast[i+k]=validlevel[0]+k*validtrend[0]
+                        validforecast[i+step]=validlevel[0]+step*validtrend[0]
                     else:
                         validlevel[i]=validlevel[i-1]+validtrend[i-1]+alpha*(valido[i]-validlevel[i-1]-validtrend[i-1])
                         validtrend[i]=validtrend[i-1]+beta*(validlevel[i]-validlevel[i-1]-validtrend[i-1])
 
-                        validforecast[i+k]=validlevel[i]+k*validtrend[i]
+                        validforecast[i+step]=validlevel[i]+step*validtrend[i]
                 #return test fitness        
                 return (np.sqrt(np.mean(np.square(validforecast - valido))))
                 
