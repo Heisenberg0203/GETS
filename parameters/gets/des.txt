@@ -1,5 +1,5 @@
 CACHE:                  True
-CODON_SIZE:             32
+CODON_SIZE:             512
 CROSSOVER:              variable_onepoint
 CROSSOVER_PROBABILITY:  0.90
 DATASET_TRAIN:          waste/train_month.csv

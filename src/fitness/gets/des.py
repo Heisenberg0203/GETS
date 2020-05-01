@@ -106,7 +106,7 @@ class des(base_ff):
             trend = d['trend']
             alpha = d['alpha']
             beta=d['beta']
-            k = d['k']
+            k = d['step']
 
             assert np.isrealobj(ft)
             if(dist=='test'):
@@ -129,13 +129,8 @@ class des(base_ff):
                         validtrend[i]=validtrend[i-1]+beta*(validlevel[i]-validlevel[i-1]-validtrend[i-1])
 
                         validforecast[i+k]=validlevel[i]+k*validtrend[i]
-                # plt.figure(figsize = (20,8))
-                # plt.plot(validforecast)
-                # plt.plot(valido)
-                # plt.show()
+                #return test fitness        
                 return (np.sqrt(np.mean(np.square(validforecast - valido))))
                 
-
-            # let's always call the error function with the true
-            # values first, the estimate second
+            #return training fitness
             return np.sqrt(np.mean(np.square(x[:] - ft[:])))
