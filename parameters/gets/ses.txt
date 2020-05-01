@@ -6,7 +6,7 @@ DATASET_TRAIN:          waste/train_month.csv
 DATASET_TEST:           waste/test_month.csv
 DEBUG:                  False
 ERROR_METRIC:           rmse
-GENERATIONS:            100
+GENERATIONS:            20
 GRAMMAR_FILE:           gets/ses.pybnf
 INITIALISATION:         PI_grow
 INVALID_SELECTION:      False

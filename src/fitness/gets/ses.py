@@ -105,14 +105,14 @@ class ses(base_ff):
             ft=d['forecast']
             level=d['level']
             alpha = d['alpha']
-            k = d['step']
+            step = d['step']
 
             assert np.isrealobj(ft)
             if(dist=='test'):
                 validobserved = test.copy()
                 temp = ft[-1];
-                print(k)
-                for i in range(len(obsereved)-k,len(obsereved)):
+                #print(k)
+                for i in range(len(obsereved)-step,len(obsereved)):
                     level[i] = level[i-1]+alpha*(obsereved[i]-level[i-1])
                     temp=level[i]    
                 #return test fiitness
