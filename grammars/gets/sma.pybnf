@@ -1,0 +1,15 @@
+<fc> ::= <deff>{::}<callf>
+
+<deff> ::= def fun(x):{:{::}<code>{::}return window, lag, yhat:}
+
+<callf> ::= window, lag, yhat = fun(list)
+
+<code> ::= {::}window = int(<window_var>+1) {::}lag = <lag_var> {::}yhat = 0 {::}<for> {::}yhat=yhat/window{::}yhat=yhat.shift(lag)
+
+<for> ::= for i in range(1,window+1):{:<for_code>:}
+
+<for_code> ::= yhat +=  x.shift(i)
+
+<window_var> ::= GE_RANGE:365
+<lag_var> ::= GE_RANGE:30
+
