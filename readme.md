@@ -1,4 +1,5 @@
 GETS is a Grammatical Evolution Time Series Framework built on top of PonyGE to predict forecast from time-series data using Grammatical Evolution.
+ For full documentation of GETS, please visit [official documentation](https://github.com/Heisenberg0203/GETS/wiki).
 
 ## 1. Grammatical Evolution
 Grammatical Evolution or simply GE is a biologically inspired algorithm that uses evolutionary computing techniques to automatically generate computer programs [Ryan, 1998](). GE generates programs using the desired fitness function, which either needs to be minimised or maximised, depending on the application. Programs are represented using a genome, a variable-length string of codons (eight bits) and grammar is used to perform genotype to phenotype mapping from the genome.
@@ -14,7 +15,7 @@ Time Series is a series of data points recorded at equal intervals of time. It c
 [PonyGE2](https://github.com/PonyGE/PonyGE2) is an implementation of Grammatical Evolution in Python. The reference paper for the same can be accessed from [here](https://arxiv.org/abs/1703.08535). 
 
 ## 4. GETS 
-GETS is specifically designed to predict the forecast from time-series data built on top of PonyGE2. For full documentation of GETS, please visit [official documentation](https://github.com/Heisenberg0203/GETS/wiki).
+GETS is specifically designed to predict the forecast from time-series data built on top of PonyGE2.
 
 The reference paper for GETS is published in ScitePress and can be accessed from [here](https://www.scitepress.org/PublicationsDetail.aspx?ID=Q2+tV92Vvuc=&t=1). The GETS paper can be referenced as below:
 
