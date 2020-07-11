@@ -14,12 +14,12 @@ Time Series is a series of data points recorded at equal intervals of time. It c
 [PonyGE2](https://github.com/PonyGE/PonyGE2) is an implementation of Grammatical Evolution in Python. The reference paper for the same can be accessed from [here](https://arxiv.org/abs/1703.08535). 
 
 ## 4. GETS 
-GETS is specifically designed to predict the forecast from time-series data built on top of PonyGE2. The reference paper for GETS is published in ScitePress and can be accessed from [here](https://www.scitepress.org/PublicationsDetail.aspx?ID=Q2+tV92Vvuc=&t=1). The GETS paper can be referenced as below:
+GETS is specifically designed to predict the forecast from time-series data built on top of PonyGE2. For full documentation of GETS, please visit [official documentation](https://github.com/Heisenberg0203/GETS/wiki).
+
+The reference paper for GETS is published in ScitePress and can be accessed from [here](https://www.scitepress.org/PublicationsDetail.aspx?ID=Q2+tV92Vvuc=&t=1). The GETS paper can be referenced as below:
 
 <details>
 <summary>Reference to GETS</summary>
-
-For full documentation of GETS, please visit [official documentation](https://github.com/Heisenberg0203/GETS/wiki)
 
 > Ryan, C.; Kshirsagar, M.; Chaudhari, P. and Jachak, Rushikesh (2020). GETS: Grammatical Evolution based Optimization of Smoothing Parameters in Univariate Time Series Forecasting. In Proceedings of the 12th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART, ISBN 978-989-758-395-7, ISSN 2184-433X, pages 595-602. DOI: 10.5220/0008963305950602
 </details>
