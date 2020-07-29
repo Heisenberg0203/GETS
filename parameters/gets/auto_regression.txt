@@ -6,13 +6,13 @@ DATASET_TRAIN:          waste/train_daily.csv
 DATASET_TEST:           waste/test_daily.csv
 DEBUG:                  False
 ERROR_METRIC:           rmse
-GENERATIONS:            20
-GRAMMAR_FILE:           gets/ses.pybnf
+GENERATIONS:            100
+GRAMMAR_FILE:           gets/autoregression.pybnf
 INITIALISATION:         PI_grow
 INVALID_SELECTION:      False
 MUTATION:               int_flip_per_codon
 POPULATION_SIZE:        500
-FITNESS_FUNCTION:       gets.ses
+FITNESS_FUNCTION:       gets.auto_regression
 REPLACEMENT:            generational
 SELECTION:              tournament
 TOURNAMENT_SIZE:        2

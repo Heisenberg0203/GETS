@@ -2,8 +2,8 @@ CACHE:                  True
 CODON_SIZE:             512
 CROSSOVER:              variable_onepoint
 CROSSOVER_PROBABILITY:  0.90
-DATASET_TRAIN:          waste/train_month.csv
-DATASET_TEST:           waste/test_month.csv
+DATASET_TRAIN:          waste/train_daily.csv
+DATASET_TEST:           waste/test_daily.csv
 DEBUG:                  False
 ERROR_METRIC:           rmse
 GENERATIONS:            20
