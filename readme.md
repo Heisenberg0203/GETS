@@ -1,6 +1,6 @@
 # GETS: Grammatical Evolution Time Series
 
-GETS is a Grammatical Evolution Time Series Framework built on top of PonyGE to predict forecast from time-series data using Grammatical Evolution.
+GETS ( Grammatical Evolution Time Series ) is a research project carried in Biocomputing and Developmental Systems Lab and funded by Science Foundation Ireland. The GETS framework identifies appropriate time series models based on nature of input dataset and it models univariate time series. Grammatical evolution is used to tune the hyperparameters of the time series models for Moving Average and Smoothing approaches. The results obtained by GETS framework have been shown to outperform the traditional Grid Search method in terms of accuracy and speedup.
  For full documentation of GETS, please visit [official documentation](https://github.com/Heisenberg0203/GETS/wiki).
 
 ## 1. Grammatical Evolution
@@ -33,3 +33,11 @@ GETS require python version 3.7 or higher. All the requirements are provided in 
 `pip3 install -r requirements.txt `
 
 All requirements come default with Anaconda3.
+
+# About Authors:
+GETS is completed under the supervision of Prof. Conor Ryan who invented Grammatical Evolution. The team of GETS comprised of Prof Conor Ryan, Meghana Kshirsagar, Rushikesh Jachak and Purva Chaudhari.
+
+1. Rushikesh Jachak: International Research Collaborator, BDS.
+2. Purva Chaudhari: International Research Collaborator, BDS.
+3. Meghana Kshirsagar: Postdoctoral Researcher, BDS
+4. Prof. Conor Ryan: Director, BDS.
