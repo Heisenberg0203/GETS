@@ -67,9 +67,9 @@ GETS is completed under the supervision of Prof. Conor Ryan who invented Grammat
 </thead>
 <tbody>
 <tr>
-<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/Lero.jpg" height="100" width="150" align="center"></p></td>
-<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/sfi.jpg" height="100" width="150" align="center"></p></td>
-<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/ul.png" height="100" width="150" align="center"></p></td>
+<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/Lero.jpg" height="150" width="225" align="center"></p></td>
+<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/sfi.jpg" height="150" width="225" align="center"></p></td>
+<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/ul.png" height="150" width="225" align="center"></p></td>
 </tr>
 </tbody>
 </table>
