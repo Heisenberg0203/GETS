@@ -41,3 +41,35 @@ GETS is completed under the supervision of Prof. Conor Ryan who invented Grammat
 2. Purva Chaudhari: International Research Collaborator, BDS.
 3. Meghana Kshirsagar: Postdoctoral Researcher, BDS
 4. Prof. Conor Ryan: Director, BDS.
+
+### In Collabaration With
+
+
+<table align="center" role="table">
+<thead>
+<tr>
+<th align="center">Biocomputing and Developmental Systems Lab</th>
+<th align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/bds.png" align="center"></th>
+
+</tr>
+</thead>
+</table>
+
+### Supported By
+
+<table align="center" role="table">
+<thead>
+<tr>
+<th align="center">LERO</th>
+<th align="center">SFI</th>
+<th align="center">University of Limerick</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/Lero.jpg" height="200" width="300" align="center"></p></td>
+<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/sfi.jpg" height="200" width="300" align="center"></p></td>
+<td align="center"><p align="center"><img src="https://github.com/Heisenberg0203/GETS/raw/master/Images/logos/ul.png" height="200" width="300" align="center"></p></td>
+</tr>
+</tbody>
+</table>
