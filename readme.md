@@ -29,6 +29,7 @@ The reference paper for GETS is published in ScitePress and can be accessed from
 
 # Requirements
 GETS require python version 3.7 or higher. All the requirements are provided in [requirements.txt]() file. It can be satisfied by running the following command:
+(Please ensure that you are in GETS-master folder)
 
 `pip3 install -r requirements.txt `
 
